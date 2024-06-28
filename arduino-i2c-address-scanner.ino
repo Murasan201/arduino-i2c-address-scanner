@@ -1,55 +1,4 @@
 
-# arduino-i2c-address-scanner
-
-This repository contains an Arduino sketch for scanning and identifying I2C devices connected to an Arduino board. The sketch scans all possible I2C addresses and prints the detected device addresses to the Serial Monitor.
-
-## Getting Started
-
-Follow the instructions below to use the I2C Scanner sketch on your Arduino board.
-
-### Prerequisites
-
-- Arduino IDE installed on your computer
-- An Arduino board (e.g., Arduino Uno R4 Minima)
-- I2C devices connected to the Arduino board
-- USB cable to connect the Arduino board to your computer
-
-### Installation
-
-1. Clone this repository to your local machine:
-    ```sh
-    git clone https://github.com/your-username/arduino-i2c-address-scanner.git
-    ```
-2. Open the Arduino IDE.
-
-3. In the Arduino IDE, open the `I2C_Scanner` sketch from the cloned repository.
-
-### Usage
-
-1. Connect your Arduino board to your computer using the USB cable.
-
-2. Upload the `I2C_Scanner` sketch to your Arduino board.
-
-3. Open the Serial Monitor in the Arduino IDE (set the baud rate to 9600).
-
-4. The Serial Monitor will display the addresses of any I2C devices connected to the Arduino board.
-
-### Example Output
-
-```
-I2C Scanner
-Scanning...
-I2C device found at address 0x27  !
-done
-
-Scanning...
-I2C device found at address 0x27  !
-done
-```
-
-### Code
-
-```cpp
 #include <Wire.h> // Include the I2C library
 
 void setup() {
@@ -90,13 +39,3 @@ void loop() {
 
   delay(5000); // Wait 5 seconds before scanning again
 }
-```
-
-## Author
-
-Murasan  
-[https://murasan-net.com/](https://murasan-net.com/)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
